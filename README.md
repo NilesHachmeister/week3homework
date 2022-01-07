@@ -30,6 +30,9 @@ After the alert has been exited the password will also be in the text area
 <img src="./images/example5.png" alt="an image demonstrating that the text area had the password in it">
 
 
+The deployed website can be found at:
+https://nileshachmeister.github.io/week3homework/
+
 Sources:
 https://www.youtube.com/watch?v=PkZNo7MFNFg&t=11052s
 I used this for help on how to create a random number generator

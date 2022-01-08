@@ -68,7 +68,7 @@ function writePassword() {
   //this function checks to make sure that the user had some sort of character input
   function isValid() {
     while (passCriteria.lower === false && passCriteria.upper === false && passCriteria.numeric === false && passCriteria.special === false) {
-      prompt("Invalid, you must have some sort of characters, hit enter and try again")
+      alert("Invalid, you must have some sort of characters, hit enter and try again")
       inputLength()
       isLower()
       isUpper()

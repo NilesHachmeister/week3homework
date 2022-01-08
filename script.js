@@ -41,63 +41,27 @@ function writePassword() {
     return;
   }
 
-  //this function asks the user if they want to use lower case letters. It also does not accept results other than capital or lower case N's and Y's
+  //this function asks the user if they want to use lower case letters.
   function isLower() {
-    isLower = prompt("Do you want to have lower case letters? 'Y' for yes, 'N' for no");
-    while (isLower != "y" && isLower != "Y" && isLower != "N" && isLower != "n") {
-      isLower = prompt("Incorrect response, please try again. Do you want to have lower case letters? 'Y' for yes, 'N' for no ");
-    }
-    if (isLower === "n" || isLower === "N") {
-      passCriteria.lower = false;
-    }
-    else {
-      passCriteria.lower = true;
-    }
+    passCriteria.lower = confirm("Do you want to have lower case letters?")
     return;
   }
 
-  //this function asks the user if they want to use upper case letters. It also does not accept results other than capital or lower case N's and Y's
+  //this function asks the user if they want to use upper case letters.
   function isUpper() {
-    isUpper = prompt("Do you want to have upper case letters? 'Y' for yes, 'N' for no");
-    while (isUpper != "y" && isUpper != "Y" && isUpper != "N" && isUpper != "n") {
-      isUpper = prompt("Incorrect response, please try again. Do you want to have upper case letters? 'Y' for yes, 'N' for no ");
-    }
-    if (isUpper === "n" || isUpper === "N") {
-      passCriteria.upper = false;
-    }
-    else {
-      passCriteria.upper = true;
-    }
+    passCriteria.upper = confirm("Do you want to have upper case letters?");
     return;
   }
 
-  //this function asks the user if they want to use numbers in their password. It also does not accept results other than capital or lower case N's and Y's
+  //this function asks the user if they want to use numbers in their password.
   function isNumeric() {
-    isNumeric = prompt("Do you want to have numeric values? 'Y' for yes, 'N' for no");
-    while (isNumeric != "y" && isNumeric != "Y" && isNumeric != "N" && isNumeric != "n") {
-      isNumeric = prompt("Incorrect response, please try again. Do you want to have numeric values? 'Y' for yes, 'N' for no ");
-    }
-    if (isNumeric === "n" || isNumeric === "N") {
-      passCriteria.numeric = false;
-    }
-    else {
-      passCriteria.numeric = true;
-    }
+    passCriteria.numeric = confirm("Do you want to have numeric values?");
     return;
   }
 
-  //this function asks the user if they want to use special characters or not. It also does not accept results other than capital or lower case N's and Y's
+  //this function asks the user if they want to use special characters or not.
   function isSpecial() {
-    isSpecial = prompt("Do you want to have special characters? 'Y' for yes, 'N' for no");
-    while (isSpecial != "y" && isSpecial != "Y" && isSpecial != "N" && isSpecial != "n") {
-      isSpecial = prompt("Incorrect response, please try again. Do you want to have special characters? 'Y' for yes, 'N' for no ");
-    }
-    if (isSpecial === "n" || isSpecial === "N") {
-      passCriteria.special = false;
-    }
-    else {
-      passCriteria.special = true;
-    }
+    passCriteria.special = confirm("Do you want to have special characters?");
     return;
   }
 
